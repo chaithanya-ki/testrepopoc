@@ -1,0 +1,12 @@
+kind: Template
+name: hello-world
+version: 1.0.0
+inputs:
+  name:
+    description: The name to greet.
+    type: string
+    default: "World"
+actions:
+  - type: display
+    template: |
+      Hello {{ name }}!
